@@ -1,0 +1,20 @@
+.QuoteBox {
+  min-height: 100vh;
+  padding: 2rem;
+}
+
+.QuoteBoxMain {
+  padding: 0.5rem;
+  width: 400px;
+  max-height: 90vh;
+  overflow: auto;
+  margin: 0 auto;
+  background-color: #ffae2d;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.SavedQuotesSection {
+  text-align: center;
+  padding: 1.5rem;
+}

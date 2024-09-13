@@ -1,0 +1,17 @@
+:root {
+  --sky-blue: #7fc8f8;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 2rem;
+  font-weight: 400;
+  background-color: var(--sky-blue);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
