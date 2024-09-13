@@ -16,7 +16,7 @@ import {
 import "./HomePage.css";
 
 export default function HomePage() {
-  const API_URL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
+  const URL = "https://ron-swanson-quotes.herokuapp.com/v2/quotes";
   const [newQuote, setQuote] = useState({});
   const [error, setError] = useState(false);
   const [savedQuotes, setSavedQuotes] = useState([]);
@@ -24,7 +24,7 @@ export default function HomePage() {
   useEffect(() => {
     async function fetchFirstQuote() {
       try {
-        const response = await fetch(API_URL);
+        const response = await fetch(URL);
         const result = await response.json();
         setQuote({ quote: result[0] });
       } catch (err) {
@@ -37,7 +37,7 @@ export default function HomePage() {
   const getNewQuote = async (event) => {
     event.preventDefault();
     try {
-      const response = await fetch(API_URL);
+      const response = await fetch(URL);
       const result = await response.json();
       setQuote({ quote: result[0] });
     } catch (err) {
